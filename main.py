@@ -1,7 +1,8 @@
 from cmd import Cmd
+import os
 
 class MyPrompt(Cmd):
-  prompt = ">>"
+  prompt = ">> "
   intro = "Welcome to LoboSh! Type ? to list all commands"
 
   def do_exit(self, inp):
@@ -17,6 +18,15 @@ class MyPrompt(Cmd):
     '''Repeate anything that the user inputs as an argument an infinite number of times'''
     while True:
       print("{}".format(inp))
+
+  def do_clear(self, inp):
+    os.system('clear')
+
+  def do_ls(self, inp):
+    for i in os.listdir():
+      print(i)
+
+  do_EOF = do_exit
     
 MyPrompt().cmdloop()
-print("Successfully")
+print("successfully")
