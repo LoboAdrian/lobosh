@@ -22,6 +22,9 @@ class MyPrompt(Cmd):
   def do_clear(self, inp):
     os.system('clear')
 
+  def do_cd(self, inp):
+    os.chdir(inp)
+
   def do_ls(self, inp):
     for i in os.listdir():
       print(i)
