@@ -44,3 +44,21 @@ Clears the screen.
 7. Exit
 ```exit```
 Exits the shell prompt.
+
+## Issues
+
+### Current Issues
+
+1. Can't stop ```yes``` without killing the whole shell.
+
+2. Current working directory doesn't update, so only the main.py's home directory is shown.
+
+3. I'm probably making a shell the wrong way, but who knows?
+
+### User found Issues
+
+If you happen to find any issues, please feel free to open one.
+
+## Contributing
+
+Just open a pull request and hope it gets merged.
