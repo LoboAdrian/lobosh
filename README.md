@@ -15,6 +15,8 @@ python3 main.py
 python main.py
 ```
 
+---
+
 ## Working Commands
 
 1. Help
@@ -45,6 +47,8 @@ Clears the screen.
 ```exit```
 Exits the shell prompt.
 
+---
+
 ## Issues
 
 ### Current Issues
@@ -58,6 +62,8 @@ Exits the shell prompt.
 ### User found Issues
 
 If you happen to find any issues, please feel free to open one.
+
+---
 
 ## Contributing
 
