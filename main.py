@@ -2,7 +2,8 @@ from cmd import Cmd
 import os
 
 class MyPrompt(Cmd):
-  prompt = ">> "
+  # prompt = "|" + os.getcwd() + " >> "
+
   intro = "Welcome to LoboSh! Type ? to list all commands"
 
   def do_exit(self, inp):
@@ -24,12 +25,15 @@ class MyPrompt(Cmd):
 
   def do_cd(self, inp):
     os.chdir(inp)
+    os.getcwd()
 
   def do_ls(self, inp):
     for i in os.listdir():
       print(i)
 
   do_EOF = do_exit
-    
+
+  prompt = os.getcwd() + " >> "
+
 MyPrompt().cmdloop()
 print("successfully")
